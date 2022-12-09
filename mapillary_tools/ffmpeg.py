@@ -16,7 +16,7 @@ else:
     from typing_extensions import TypedDict
 
 LOG = logging.getLogger(__name__)
-FRAME_EXT = ".jpg"
+FRAME_EXT = ".png"
 NA_STREAM_IDX = "NA"
 
 
