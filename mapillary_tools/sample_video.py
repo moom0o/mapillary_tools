@@ -54,10 +54,10 @@ def sample_video(
 ) -> None:
     video_dir, video_list = _normalize_path(video_import_path, skip_subfolders)
 
-    if not xor(0 <= video_sample_distance, 0 <= video_sample_interval):
-        raise exceptions.MapillaryBadParameterError(
-            f"Expect either non-negative video_sample_distance or non-negative video_sample_interval but got {video_sample_distance} and {video_sample_interval} respectively"
-        )
+    # if not xor(0 <= video_sample_distance, 0 <= video_sample_interval):
+    #     raise exceptions.MapillaryBadParameterError(
+    #         f"Expect either non-negative video_sample_distance or non-negative video_sample_interval but got {video_sample_distance} and {video_sample_interval} respectively"
+    #     )
 
     video_start_time_dt: T.Optional[datetime.datetime] = None
     if video_start_time is not None:
